@@ -1,0 +1,22 @@
+seatsTotal: 160
+days: 3
+speakers: 20
+sessions: 50
+en:
+  days: "Days"
+  attendees: "attendees"
+  speakers: "speakers"
+  sessions: "sessions"
+  daysText: "of awesome PowerShell content!"
+  attendeesText: "from all over Europe!"
+  speakersText: "ready to help you reach the next level!"
+  sessionsText: "in a variety of different topics, in two languages!"
+de:
+  days: "Tage"
+  attendees: "Teilnehmer"
+  speakers: "Redner"
+  sessions: "Sessions"
+  daysText: "mit großartigen PowerShell Inhalten!"
+  attendeesText: "aus ganz Europa!"
+  speakersText: "bereit Ihnen auf die nächste Stufe zu helfen!"
+  sessionsText: "mit einer Vielzahl unterschiedlicher Themen, in zwei Sprachen!"

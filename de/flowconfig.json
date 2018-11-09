@@ -1,0 +1,296 @@
+[
+    {
+        "type": "photo",
+        "category": "USA",
+        "thumbnail": "http://www.psconf.eu/img/speakers/JeffreySnover_200x300.jpg",
+        "title": "Jeffrey Snover",
+        "description": "Jeffrey Snover is a Technical Fellow at Microsoft and the Chief Architect for the Enterprise Cloud Group which includes Azure Stack, Windows Server, System Center and Operations Management Suite.<br><br>Snover is the inventor of Windows PowerShell, an object-based distributed automation engine, scripting language, and command line shell. Snover joined Microsoft in 1999 as divisional architect for the Management and Services Division, providing technical direction across Microsoft's management technologies and products.<br><br>Snover has over 30 years of industry experience with a focus on management technologies and solutions. He was an architect in the office of the CTO at Tivoli and a development manager at NetView. He has worked also as a consulting engineer and development manager at DEC, where he led various network and systems management projects.<br><br>Snover is a frequent speaker at industry and research conferences on a variety of cloud, management and language topics."
+    },
+    {
+        "type": "photo",
+        "category": "Germany",
+        "thumbnail": "http://www.psconf.eu/img/speakers/TobiasWeltner_200x300.jpg",
+        "title": "Tobias Weltner",
+        "description": "Germany-based Dr. Tobias Weltner is a long-term PowerShell MVP, creator of the 'PowerShell Conference EU', and a renown PowerShell teacher and developer. Throughout Europe, he trains staff and supports projects. <br><br>Tobias created the 'ISESteroids' dev extension for PowerShell professionals, has written 150+ IT books, and is on the editorial board of powershellmagazine.com. He also started the powershell.com online community and submits his famous daily 'PowerShell tip' over the past 9 years. <br><br>In his private life, as a Rotarian he supports international youth exchange and enjoys crew rowing. <br><br>Contact: tobias.weltner@email.de, Twitter @tobiaspsp, or visit his homepage www.powertheshell.com."
+    },
+    {
+        "type": "photo",
+        "category": "Netherlands",
+        "thumbnail": "http://www.psconf.eu/img/speakers/AndreKamman_200x300.jpg",
+        "title": "Andre Kamman",
+        "description": "André is a SQL Server Solutions Architect at CloudDBA, based in The Netherlands. In previous roles he’s done a lot of DBA work on 100’s of servers where he discovered his love for Powershell and automating processes in general. Today the better part of his day he’s building and tuning Cloud migration scenarios, OLTP Systems, Data warehouses & ETL processes and even the occasional PDW. Enjoying automation so much, he's discovered BIML and is loving it. André is a SQL Server MPV, Dutch PASS Chapter Leader and organizer of SQL Rally Amsterdam and SQL Saturday Holland"
+    },
+    {
+        "type": "photo",
+        "category": "USA",
+        "thumbnail": "http://www.psconf.eu/img/speakers/JaredAtkinson_200x300.jpg",
+        "title": "Jared Atkinson",
+        "description": "Jared Atkinson is the Hunt capability lead with Veris Group’s Adaptive Threat Division. Before working for Veris Group, Jared spent 4 years leading incident response missions for the U.S. Air Force Hunt Team, detecting and removing Advanced Persistent Threats on Air Force and DoD networks. <br><br>Passionate about PowerShell and the Open Source community, Jared is the lead developer of the PowerForensics project, an open source forensics framework for PowerShell, Uproot, a WMI based IDS, and maintains a DFIR focused blog at www.invoke-ir.com. <br><br>Jared holds a Masters of Science in Information Assurance and Security and holds numerous industry certifications including GIAC Certified Forensic Analyst (GCFA) and GIAC Certified Windows Security Administrator (GCWN)."
+    },
+    {
+        "type": "photo",
+        "category": "Germany",
+        "thumbnail": "http://www.psconf.eu/img/speakers/DavidDasNeves_200x300.jpg",
+        "title": "David das Neves",
+        "description": "David das Neves works as Premier Field Engineer at Microsoft Germany in Munich. He gives workshops and supports the premier customers at the topics SCCM / MDM and Win10 Client. Before that David has been a former .Net developer and has therefore very strong understandings in development and automization techniques. He uses them today in combination with Powershell and tries to convince the people at the DevOps front. <br><br>Beside that he writes his own blog and is very active at the german Technet forum to help the people."
+    },
+    {
+        "type": "photo",
+        "category": "USA",
+        "thumbnail": "http://www.psconf.eu/img/speakers/WillSchroeder_200x300.jpg",
+        "title": "Will Schroeder",
+        "description": "Will Schroeder is a security researcher and redteamer for Veris Group’s Adaptive Threat Division. He has presented at a number of security conferences including Shmooon, Defcon, Derbycon and several Security BSides conferences on topics spanning AV-evasion, post-exploitation, red teaming tradecraft, and offensive PowerShell. <br><br>Will is a co-founder of the Veil-Framework, developed PowerView and PowerUp, is an active developer on the PowerSploit project, and is a co-founder and core developer of Empire, the PowerShell post-exploitation agent. He enjoys exploring the offensive capabilities of PowerShell and helping clients secure themselves against the “real” bad guys."
+    },
+    {
+        "type": "photo",
+        "category": "Germany",
+        "thumbnail": "http://www.psconf.eu/img/speakers/ThorstenButz_200x300.jpg",
+        "title": "Thorsten Butz",
+        "description": ""
+    },
+    {
+        "type": "photo",
+        "category": "Netherlands",
+        "thumbnail": "http://www.psconf.eu/img/speakers/BenGelens_200x300.jpg",
+        "title": "Ben Gelens",
+        "description": "Ben Gelens is a PowerShell MVP and technical consultant at Inovativ in the Netherlands where he works as a member of the CloudOS team. While building clouds for his customers, Ben’s primary focus is automation and orchestration. As such, Ben has a great deal of field experience on all kinds of PowerShell subjects (e.g. Remoting, Tool making, DSC, SMA, Workflow) in all kinds of areas (e.g. Windows Azure Pack, Active Directory, Office 365, Server Management, Azure). <br><br>Ben is an active IT community participant and speaker. He is a member of the Hyper-V.nu community, a member of the Dutch PowerShell User Group and a contributing author for PowerShell magazine."
+    },
+    {
+        "type": "photo",
+        "category": "USA",
+        "thumbnail": "http://www.psconf.eu/img/speakers/BrucePayette_200x300.jpg",
+        "title": "Bruce Payette",
+        "description": ""
+    },
+     {
+        "type": "photo",
+        "category": "USA",
+        "thumbnail": "http://www.psconf.eu/img/speakers/DavidWilson_200x300.jpg",
+        "title": "David Wilson",
+        "description": "David Wilson is a software engineer in the PowerShell team at Microsoft, primarily focused on development tools such as the PowerShell ISE, the PowerShell extension for Visual Studio Code, and PowerShell Editor Services.  His mission is to bring a first-class PowerShell authoring experience to all developers regardless of which editor they prefer.<br><br>You can find him on Twitter and GitHub at @daviwil"
+    },
+    {
+        "type": "photo",
+        "category": "Serbia",
+        "thumbnail": "http://www.psconf.eu/img/speakers/AleksandarNikolic_200x300.jpg",
+        "title": "Aleksandar Nikolić",
+        "description": "Aleksandar Nikolic is a Cloud and Datacenter Management MVP, a Microsoft Azure MVP, Azure Advisor and Insider, a co-founder of PowerShellMagazine.com, and a community manager of PowerShell.com. He also delivers PowerShell and Azure training courses around the world. For the last couple of years he's been working closely with Microsoft Azure PowerShell and Azure Automation teams providing feedback and influencing design of Azure automation solutions. "
+    },
+    {
+        "type": "photo",
+        "category": "Germany",
+        "thumbnail": "http://www.psconf.eu/img/speakers/HolgerVoges_200x300.jpg",
+        "title": "Holger Voges",
+        "description": ""
+    },
+    {
+        "type": "photo",
+        "category": "United Kingdom",
+        "thumbnail": "http://www.psconf.eu/img/speakers/RobSewell_200x300.jpg",
+        "title": "Rob Sewell",
+        "description": "Rob is a SQL Server DBA with a passion for Powershell, Azure, Automation, and SQL (PaaS geddit?). He has volunteered and spoken at SQL community events through the UK and Europe and is a member of the committee that organises SQL Saturday Exeter. He is a proud supporter of the SQL and Powershell communities. <br><br>He relishes sharing and learning and can be found doing both via Twitter and his blog. He spends most of his time looking at a screen and loves to solve problems. He knows that looking at a screen so much is bad for him because his wife tells him so.  Thus, you can find him on the cricket field in the summer and flying a drone in the winter. <br><br>He has a fabulous beard."
+    },
+    {
+        "type": "photo",
+        "category": "",
+        "thumbnail": "http://www.psconf.eu/img/speakers/RinonBelegu_200x300.jpg",
+        "title": "Rinon Belegu",
+        "description": ""
+    },
+    {
+        "type": "photo",
+        "category": "Netherlands",
+        "thumbnail": "http://www.psconf.eu/img/speakers/JaapBrasser_200x300.jpg",
+        "title": "Jaap Brasser",
+        "description": ""
+    },
+    {
+        "type": "photo",
+        "category": "USA",
+        "thumbnail": "http://www.psconf.eu/img/speakers/ChrissyLeMaire_200x300.jpg",
+        "title": "Chrissy LeMaire",
+        "description": "Chrissy LeMaire is a Windows PowerShell MVP who has worked in IT for nearly 20 years. She currently serves as SQL Server DBA for NATO Special Ops in Belgium, and is pursuing an MS in Systems Engineering at Regis University. <br><br>In her spare time, she maintains her two websites, netnerds.net and RealCajunRecipes.com. She also contributes to the Hey, Scripting Guy! Blog and runs the Belgian PowerShell User Group with Luc Dekens. <br><br>You can follow her on Twitter at @cl."
+    },
+    {
+        "type": "photo",
+        "category": "Sweden",
+        "thumbnail": "http://www.psconf.eu/img/speakers/StaffanGustafsson_200x300.jpg",
+        "title": "Staffan Gustafsson",
+        "description": "Staffan Gustafsson is a Software Developer and founder of PowerCode Consulting AB, specializing in advanced development and debugging on the Windows platform. He is interested in programming languages in general but specializes on C++, C# and PowerShell. <br><br>Most of his career, Staffan has been tinkering with debuggers, scripting them and writing extensions to them. After years of frustration with the limitations of CMD.exe, Staffan was an early adopter of PowerShell, and ever since the first beta, he has been exploring the platform and language with great joy. He shares his modules on github and the PowerShell gallery."
+    },
+    {
+        "type": "photo",
+        "category": "Norway",
+        "thumbnail": "http://www.psconf.eu/img/speakers/OyvindKallstad_200x300.jpg",
+        "title": "Øyvind Kallstad",
+        "description": "Øyvind is a senior IT consultant that have more than 10 years of experience working with enterprise infrastructure environments. His passion is automation and PowerShell, and can often be seen mumbling about optimization and algorithms while staring out into space. His thoughts and projects are often expressed in his blog; Communary. He can also be reached though Twitter at @okallstad."
+    },
+    {
+        "type": "photo",
+        "category": "Poland",
+        "thumbnail": "http://www.psconf.eu/img/speakers/BartekBielawski_200x300.jpg",
+        "title": "Bartosz Bielawski",
+        "description": "Bartosz (Bartek) Bielawski is a busy Windows engineer for Optiver, an international company. He loves PowerShell and automation and that love earned him the honor of Microsoft MVP. He shares his knowledge mainly in PowerShell Magazine, in his blogs, and through articles published in the Polish “IT Professional” magazine. He is also a co-author of the PowerShell Deep Dives book."
+    },
+    {
+        "type": "photo",
+        "category": "",
+        "thumbnail": "http://www.psconf.eu/img/speakers/BenjaminHodge_200x300.jpg",
+        "title": "Benjamin Hodge",
+        "description": ""
+    },
+    {
+        "type": "photo",
+        "category": "United Kingdom",
+        "thumbnail": "http://www.psconf.eu/img/speakers/GaelColas_200x300.jpg",
+        "title": "Gael Colas",
+        "description": "Gael Colas is a Cloud and Automation consultant based in London, UK, and a fervent DevOps enthusiast. He has a extended experience in Infrastructure Operations for Financial Services, supporting critical platforms, with tight security constraints.<br><br>Although from a networking background, he went briefly through development, unix administration, Windows and third-party applications administration before falling in love with PowerShell and automating the crap out of everything. Currently, Gael is at the service of a European Cloud Provider to develop PaaS and IaaS solutions.<br><br>Passionate about Management, DevOps, Lean, Agile, ITIL, Gael is simply addicted to learning.<br><br>Increasingly, Gael shares his thoughts and discoveries through blog posts and twitter via @gaelcolas."
+    },
+    {
+        "type": "photo",
+        "category": "India",
+        "thumbnail": "http://www.psconf.eu/img/speakers/RavikanthChaganti_200x300.jpg",
+        "title": "Ravikanth Chaganti",
+        "description": ""
+    },
+    {
+        "type": "photo",
+        "category": "Netherlands",
+        "thumbnail": "http://www.psconf.eu/img/speakers/FlynnBundy_300x200.jpg",
+        "title": "Flynn Bundy",
+        "description": ""
+    },
+    {
+        "type": "photo",
+        "category": "United Kingdom",
+        "thumbnail": "http://www.psconf.eu/img/speakers/IainBrighton_300x200.jpg",
+        "title": "Iain Brighton",
+        "description": ""
+    },
+    {
+        "type": "photo",
+        "category": "Denmark",
+        "thumbnail": "http://www.psconf.eu/img/speakers/JakobGSvendsen_300x200.jpg",
+        "title": "Jakob Gottlieb Svendsen",
+        "description": ""
+    },
+    {
+        "type": "photo",
+        "category": "United Kingdom",
+        "thumbnail": "http://www.psconf.eu/img/speakers/placeholder-hi_300x200.png",
+        "title": "James O'Neill",
+        "description": ""
+    },
+    {
+        "type": "photo",
+        "category": "Norway",
+        "thumbnail": "http://www.psconf.eu/img/speakers/JanEgilRing_300x200.jpg",
+        "title": "Jan Egil Ring",
+        "description": ""
+    },
+    {
+        "type": "photo",
+        "category": "Denmark",
+        "thumbnail": "http://www.psconf.eu/img/speakers/MathiasJessen_300x200.jpg",
+        "title": "Mathias Jessen",
+        "description": ""
+    },
+    {
+        "type": "photo",
+        "category": "USA",
+        "thumbnail": "http://www.psconf.eu/img/speakers/JasonYoder2_300x200.jpg",
+        "title": "Jason Yoder",
+        "description": ""
+    },
+    {
+        "type": "photo",
+        "category": "Singapore",
+        "thumbnail": "http://www.psconf.eu/img/speakers/MatthewHitchcock2_300x200.jpg",
+        "title": "Matthew Hitchcock",
+        "description": ""
+    },
+    {
+        "type": "photo",
+        "category": "USA",
+        "thumbnail": "http://www.psconf.eu/img/speakers/MattGraeber.jpg",
+        "title": "Matthew Graeber",
+        "description": ""
+    },
+    {
+        "type": "photo",
+        "category": "Netherlands",
+        "thumbnail": "http://www.psconf.eu/img/speakers/MatthewHodgkins_300x200.jpg",
+        "title": "Matthew Hodgkins",
+        "description": ""
+    },
+    {
+        "type": "photo",
+        "category": "Netherlands",
+        "thumbnail": "http://www.psconf.eu/img/speakers/EstherBarthel_300x200.jpg",
+        "title": "Esther Barthel",
+        "description": ""
+    },
+    {
+        "type": "photo",
+        "category": "Germany",
+        "thumbnail": "http://www.psconf.eu/img/speakers/RaimundAndree.jpg",
+        "title": "Raimund Andree",
+        "description": "Raimund is a Premier Field Engineer at Microsoft based in Munich. His technical focus areas are everything around system automation, DevOps and Identity (AD, ADFS). He is participating in DevOps projects and is delivering Workshops in this area. Right now, he is engaged in projects driving DSC and automating Skype for Business. Raimund has also a developer background in C#."
+    },
+    {
+        "type": "photo",
+        "category": "Canada",
+        "thumbnail": "http://www.psconf.eu/img/speakers/WillAnderson.jpg",
+        "title": "Will Anderson",
+        "description": ""
+    },
+    {
+        "type": "photo",
+        "category": "Belgium",
+        "thumbnail": "http://www.psconf.eu/img/speakers/LucDekens_300x200.jpg",
+        "title": "Luc Dekens",
+        "description": ""
+    },
+    {
+        "type": "photo",
+        "category": "Germany",
+        "thumbnail": "http://www.psconf.eu/img/speakers/JanHendrikPeters.jpg",
+        "title": "Jan-Hendrik Peters",
+        "description": "Jan-Hendrik aka JHP is a Premier Field Engineer at Microsoft Germany based in Cologne. He is supporting Premier customers by delivering workshops for PowerShell, Desired State Configuration, Kerberos and DevOps on Azure as well as by taking on engagements in the area of Active Directory and automation in general."
+    },
+    {
+        "type": "photo",
+        "category": "USA",
+        "thumbnail": "http://www.psconf.eu/img/speakers/AngelCalvo.jpg",
+        "title": "Angel Calvo",
+        "description": "Angel Calvo is a Partner Group Program Manager for Microsoft Azure Operations Management Suite (OMS). Angel is also the Community Product Lead for the PowerShell Open Source GitHub Projects. In his current role, Angel Calvo is responsible to drive the business and technology strategies, and leads the Program Management team responsible for delivering: The Azure OMS Configuration and Automation Service portfolio; PowerShell and DSC on Linux and Windows; Windows Remote Management Protocol (WinRM); OpenSSH for Windows; and the automation Platform that enables IT Professionals, DevOps and Hosters to configure and manage: Azure Services, Windows, OMS Solutions, Hybrid Clouds and Data Center infrastructures."
+    },
+    {
+        "type": "photo",
+        "category": "Germany",
+        "thumbnail": "http://www.psconf.eu/img/speakers/DanielBoth.jpg",
+        "title": "Daniël Both",
+        "description": "Daniël is an Infrastructure Engineer with 10 years of experience in IT. Started with scripting in batch and VBScript, but soon adapted PowerShell and loving it since. He’s currently working @ Optiver where he manages the storage, hypervisor and Windows infrastructure with the goal to serve the business best by automating as much as possible."
+    },
+    {
+        "type": "photo",
+        "category": "USA",
+        "thumbnail": "http://www.psconf.eu/img/speakers/JoeyAiello.jpg",
+        "title": "Joey Aiello",
+        "description": "Joey Aiello is a Program Manager on the PowerShell Team focusing on open-source and cross-platform efforts including PowerShell 6.0, OpenSSH, and the PowerShell plugin for VS Code. Areas of personal interest include cross-platform tooling, package management, and selfhosting ALL the preview bits."
+    },
+    {
+        "type": "photo",
+        "category": "USA",
+        "thumbnail": "http://www.psconf.eu/img/speakers/KennethHansen.jpg",
+        "title": "Kenneth Hansen",
+        "description": "Kenneth is the Lead Principal Program Manager for PowerShell and has enjoyed working on the PowerShell team for the past 14 years.  Prior to PowerShell, at Microsoft, Kenneth has also worked on IP Telephony, BackOffice, Exchange Apps, and Provisioning. Before Microsoft, Kenneth led software development for MasPar, a manufacturer of Massively Parallel Computers and even earlier worked in various startup tool and compiler teams."
+    },
+    {
+        "type": "photo",
+        "category": "USA",
+        "thumbnail": "http://www.psconf.eu/img/speakers/MarkGray.jpg",
+        "title": "Mark Gray",
+        "description": "Mark Gray is a Senior Program Manager in the PowerShell team at Microsoft. He is currently the PM owner for PowerShell Desired State Configuration. He has worked in various management technologies since joining Microsoft 10 years ago.  The future of management is extremely exciting with the advent of DevOps including Continuous Integration and Continuous Delivery (CI/CD) and he is incredibly thrilled to be part of the journey."
+    }
+]

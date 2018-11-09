@@ -1,0 +1,130 @@
+<section id="register">
+	<div class="container">
+		<h2>Register<!--<small>- {{site.data.event.seatsLeft }} seats left</small>--></h2>
+		<div class="row">
+			<div class="col-md-6">
+                <div class="alert alert-warning" role="alert">
+                    Last few seats available. When you register and receive an invoice, the seat is reserved for you.
+                </div>
+                <p>Registration fee is EUR 999 (19% VAT included, net price € 839,50). EUR 899 early bird contingent is exhausted.
+                Registration is limited, first come, first serve.
+                Registration fee covers all three conference days including coffee breaks, lunch, and the evening event.</p>
+
+				<p>You can reserve hotel rooms if needed at the <a href="https://www.cbooking.de/v3/Login.aspx?id=congresshannover&allotmentcode=psconf.eu&lang=en" target="_blank">Hannover Congress Hotel</a> where we
+				reserved contingents for you. Hotel accommodation is not included. If you'd like to choose a different hotel, please make sure it is close to a tram station
+				for easy travel.</p>
+
+				<p>When you register, based on availability we send an invoice to the email address you specify, with the billing address you specified.
+				You then have 30 days to pay the invoice. After 30 days, your registration request is automatically cancelled.</p>
+
+				<p>Once the invoice is paid, you receive a registration confirmation.
+				If the invoice is paid after all seats were already taken, we reimburse your payment immediately.</p>
+
+				<p>Conference registration is transferable and not bound to a specific person. Bring your registration confirmation to the conference.
+				Registrations are not cancellable.</p>
+
+				<p>If you need changes after you registered (i.e. attendee changes),  or if you have other questions, don't hesitate to
+				<a href="mailto:contact@psconf.eu">contact us</a>.</p>
+
+                <p>Note: To also register for the optional preconference workshop, please check the box in your registration form.
+                Preconference workshops are completely optional and cost EUR 499,-  (19% VAT included, net price € 419,33)  for the first 30 signups,
+                then EUR 599,- (net price € 503,36). There are many preconference sessions to choose from (see Agenda).</p>
+
+                <p>Errors and omissions excepted. The invoice you receive when you register is decisive and becomes effective only when paid within 30 days.</p>
+			</div>
+			<div class="col-md-6">
+				<div class="panel panel-default box-shadow--3dp">
+				<div class="panel-body">
+				<form class="form-horizontal" id="registerForm" action="http://formspree.io/register@psconf.eu" method="post" data-toggle="validator">
+					<!-- Name -->
+					<div class="form-group">
+						<label for="attendeeName" class="col-sm-4">Attendee Name</label>
+						<div class="col-sm-8">
+							<input type="text" name="Name" class="form-control" id="attendeeName" placeholder="Full name of person attending the conference" required>
+						</div>
+					</div>
+
+					<!-- Company -->
+					<div class="form-group">
+						<label for="company" class="col-sm-4">Company</label>
+						<div class="col-sm-8">
+							<input type="text" name="Company" class="form-control" id="company" placeholder="Company">
+						</div>
+					</div>
+
+					<!-- Billing address -->
+					<div class="form-group">
+						<label for="billingAddress" class="col-sm-4">Billing Address</label>
+						<div class="col-sm-8">
+							<textarea class="form-control" name="Address" rows="3" id="billingAddress" placeholder="Complete address as it appears on invoice. Make sure this is the correct address you need." required></textarea>
+						</div>
+					</div>
+
+					<!-- VAT ID -->
+					<div class="form-group">
+						<label for="vatId" class="col-sm-4">VAT ID</label>
+						<div class="col-sm-8">
+							<input type="text" name="VAT" class="form-control" id="vatId" placeholder="If available, else leave blank">
+						</div>
+					</div>
+
+					<!-- Email address -->
+					<div class="form-group">
+						<label for="email" class="col-sm-4">Email address</label>
+						<div class="col-sm-8">
+							<input type="email" name="Email" class="form-control" id="email" placeholder="Invoice will be sent to this address" required>
+						</div>
+					</div>
+
+					<!-- Country -->
+					<div class="form-group">
+						<label for="countries_phone1" class="col-sm-4">Country</label>
+						<div class="col-sm-8">
+							<select id="countries_phone1" name="Country" class="form-control bfh-countries" data-country="DE" required></select>
+						</div>
+					</div>
+
+					<!-- Phone number -->
+					<div class="form-group">
+						<label for="phone" class="col-sm-4">Phone number</label>
+						<div class="col-sm-8">
+							<!--<input type="text" class="form-control" id="phone" placeholder="Phone number" aria-describedby="phoneHelp">-->
+							<input type="text" name="Phone" class="form-control bfh-phone" data-country="countries_phone1" required>
+						</div>
+					</div>
+
+					<!-- Other comments -->
+					<div class="form-group">
+						<label for="comments" class="col-sm-4">Other comments</label>
+						<div class="col-sm-8">
+							<textarea class="form-control" name="Comments" rows="3" id="billingAddress"></textarea>
+							<span class="help-block">If you have any addition information that you feel we should be aware of, for instance any dietary needs etc., please use this field to let us know.</span>
+						</div>
+					</div>
+
+					<!-- Pre-Conference -->
+					<div class="form-group">
+                        <label for="Pre-Conference" class="col-sm-4">Preconference</label>
+                        <div class="col-sm-8">
+                            <input type="checkbox" name="Pre-Conference" id="Pre-Conference" data-toggle="tooltip" data-placement="bottom" title="By checking this box you indicate that you wish to participate in the preconference, and an additional fee will be added to your incoice!" data-container="body" />
+                            <!--<span class="help-block">Please Check this box if you wish to attend the Pre-Conference Sessions and are happy to be invoiced for this on top of the Standard Conference Registration Fee </span>-->
+                        </div>
+                    </div>
+
+					<input type="hidden" name="_subject" value="New registration from site" />
+					<!--<input type="hidden" name="_next" value="/index.html" />-->
+					<input type="text" name="_gotcha" style="display:none" />
+
+                    <!-- Submit button -->
+					<div class="form-group">
+						<div class="col-sm-8">
+							<button type="submit" class="btn btn-default">Register</button>
+						</div>
+					</div>
+				</form>
+				</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>

@@ -1,0 +1,19 @@
+<div class="speakers">
+    <ul class="row">
+        {% for speaker in site.data.speakers.speakers %}
+        <li class="col-md-{{site.data.speakers.col_md}} col-sm-{{site.data.speakers.col_sm}} col-xs-{{site.data.speakers.col_xs}}">
+            <center><h3>{{ speaker.name }}</h3></center>
+            <div class="thumbnail">
+                <img src="{{ speaker.img }}" class="img-responsive" alt="responsive image">
+                <div class="caption" id="caption-up">
+                    <p>
+                        {{ speaker.bio.[page.lang] }}<br><br>
+                        <i class="fa fa-twitter fa-fw"></i>&nbsp; <a href="{{ speaker.twitterurl }}">{{ speaker.twittername }}</a><br>
+                        <i class="fa fa-external-link fa-fw"></i>&nbsp; <a href="{{ speaker.blogurl }}">{{ speaker.blogname }}</a>
+                    </p>
+                </div>
+            </div>
+        </li>
+        {% endfor %}
+    </ul>
+</div>

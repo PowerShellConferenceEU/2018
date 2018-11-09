@@ -1,0 +1,8 @@
+title: PSConfEU
+name: PowerShell Conference EU 2017
+description: PowerShell Conference EU 2017
+author:
+lang: en
+baseurl: "/dev"
+markdown: kramdown
+exclude: [vendor]

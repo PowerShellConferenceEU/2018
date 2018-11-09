@@ -1,4 +1,828 @@
----
-layout: site
-lang: en
----
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The official website for PowerShell Conference Europe.">
+    <meta name="author" content="">
+    <title>PowerShell Conference Europe 2018</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/pe-icons.css" rel="stylesheet">
+    <link href="css/prettyPhoto.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/tablesaw.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <script src="js/jquery.js"></script>
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <link rel="shortcut icon" href="images/ico/favicon.ico">
+
+    <script type="text/javascript">
+        jQuery(document).ready(function ($) {
+            'use strict';
+            jQuery('body').backstretch([
+                "images/pic_jeffrey.jpg"
+            ], {
+                duration: 5000,
+                fade: 500
+            });
+
+            $("#mapwrapper").gMap({
+                controls: false,
+                scrollwheel: false,
+                markers: [{
+                    html: '<h2>Hannover Congress Centrum</h2><p>Theodor-Heuss-Platz 1-3<br>30175 Hannover<br>Germany</p><p>+49 511 81130</p><p><a href="http://www.hcc.de/">hcc.de</a></p><p><a href="https://www.google.no/maps/dir//Hannover+Congress+Centrum,+Theodor-Heuss-Platz+1-3,+30175+Hannover/@52.3760037,9.7691176,17z/data=!4m13!1m4!3m3!1s0x47b00b5af0dd0b79:0xbc2cad20ca00fdfe!2sHannover+Congress+Centrum!3b1!4m7!1m0!1m5!1m1!1s0x47b00b5af0dd0b79:0xbc2cad20ca00fdfe!2m2!1d9.7691176!2d52.3760037?hl=en">Directions</a></p>',
+                    latitude: 52.3760037,
+                    longitude: 9.7691176
+                }],
+                icon: {
+                    image: "http://www.google.com/mapfiles/marker.png",
+                    shadow: "http://www.google.com/mapfiles/shadow50.png",
+                    iconsize: [20, 34],
+                    shadowsize: [37, 34],
+                    iconanchor: [9, 34],
+                    shadowanchor: [19, 34]
+                },
+                latitude: 52.3760037,
+                longitude: 9.7691176,
+                zoom: 17
+            });
+
+            // set the date we're counting down to
+            var target_date = new Date('Apr, 17, 2018').getTime();
+            var days, hours, minutes, seconds;
+            var countdown = document.getElementById('countdown');
+            setInterval(function () {
+                var current_date = new Date().getTime();
+                var seconds_left = (target_date - current_date) / 1000;
+                days = parseInt(seconds_left / 86400);
+                seconds_left = seconds_left % 86400;
+                hours = parseInt(seconds_left / 3600);
+                seconds_left = seconds_left % 3600;
+                minutes = parseInt(seconds_left / 60);
+                seconds = parseInt(seconds_left % 60);
+                countdown.innerHTML = '<span class="days">' + days +
+                    ' <b>Days</b></span> <span class="hours">' + hours +
+                    ' <b>Hours</b></span> <span class="minutes">' +
+                    minutes + ' <b>Minutes</b></span> <span class="seconds">' + seconds +
+                    ' <b>Seconds</b></span>';
+            }, 1000);
+        });
+    </script>
+</head>
+<!--/head-->
+
+<body>
+    <div id="preloader"></div>
+    <header class="navbar navbar-inverse navbar-fixed-top opaqued" role="banner">
+        <div id="search-wrapper">
+            <div class="container">
+                <input id="search-box" placeholder="Search">
+            </div>
+        </div>
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand" href="index.html">
+                    <h1>psconf.eu</h1>
+                </a>
+            </div>
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <!--<li class="active"><a href="index.html">Home</a></li>-->
+                    <li>
+                        <a href="#main-slider">Home</a>
+                    </li>
+                    <li>
+                        <a href="#about">About</a>
+                    </li>
+                    <li>
+                        <a href="#register">Register</a>
+                    </li>
+                    <li>
+                        <a href="#agenda">Agenda</a>
+                    </li>
+                    <li>
+                        <a href="#venue">Venue</a>
+                    </li>
+                    <li>
+                        <a href="legal.html">Legal</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!--/header-->
+
+    <section id="main-slider" class="no-margin">
+        <div class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="item active">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="carousel-content center centered">
+                                    <h2 class="boxed animation fade-down">PowerShell Conference Europe 2018</h2>
+                                    <br>
+                                    <div id="countdown" class="boxed animation fade-down"></div>
+                                    <!-- /#Countdown Div -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--/.item-->
+            </div>
+            <!--/.carousel-inner-->
+        </div>
+        <!--/.carousel-->
+    </section>
+    <!--/#main-slider-->
+
+    <div id="content-wrapper">
+
+        <!-- About -->
+        <section id="about" class="white">
+            <div class="container">
+                <div class="gap"></div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="center gap fade-down section-heading">
+                            <h2 class="main-title">About</h2>
+                            <hr>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-10 col-md-offset-1 fade-up">
+                        <p>
+                            PowerShell Conference Europe is the largest PowerShell-themed conference in Europe, and is held in Hanover, Germany each
+                            year. We attract speakers and attendees from all over the world, with such topics as security,
+                            DevOps, databases, core language features, optimization, DSC, best practices and much more.
+                        </p>
+                        <p>
+                            If you use PowerShell in your daily job, this conference is the perfect opportunity to enchance your skillset as well as
+                            build your network with like-minded individuals. The talk between each session is often where
+                            the magic happens! All speakers are available (as much as it's possible) throughout the whole
+                            conference, and are approachable for questions and discussions.
+                        </p>
+                        <p>
+                            Each year Microsoft also sends a delegation from the PowerShell team, and this is a unique opportunity to interact directly
+                            with the people responsible for developing PowerShell.
+                        </p>
+                        <p>
+                            In 2018, we extend the conference from 3 to 4 days and include a new PowerShell Guerilla Evening. Delegates get the chance
+                            to actually work with some of the many new and exciting technologies, guided by speakers and
+                            experts. Instead of just listening to presentations, the Guerilla Evening gives you the opportunity
+                            to actually put things to work and get high class guidance. For example, security expert Will
+                            Harmj0y and colleagues will point you to the tools required to defend IT environments, and you'll
+                            actually see and learn how PowerShell can be used as a forensic tool, how attackers think, and
+                            how you can defend attacks. Bring a notebook if you'd like to code yourself, or just follow the
+                            demos.
+                        </p>
+                        <p>
+                            The conference is organized by the community, for the community! And we are happy to welcome you to yet another brilliant
+                            conference on April 17-20, 2018. Will we see you there?
+                        </p>
+                    </div>
+                    <div class="gap"></div>
+                    <div class="col-md-10 col-md-offset-1">
+                        <p>
+                            To catch the spirit of this conference, have a look at the official after-conference movie here:
+                        </p>
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/G38tN7B46Fg"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Register -->
+        <section id="register" class="divider-section">
+            <div class="container">
+                <div class="gap"></div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="center gap fade-down section-heading">
+                            <h2 class="main-title">Register</h2>
+                            <hr>
+                            <p>Don't miss out!</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-10 col-md-offset-1 fade-up">
+                        <p>
+                            PowerShell Conference Europe is all about creativity paired with rock-solid professional firsthand information. It's a friendly
+                            place where you can meet new people, connect with user groups, find answers and bring back some
+                            fresh ideas
+                        </p>
+                        <p>
+                            Admission is EUR 1.399,- for 4 days and includes 50 sessions, lunch, coffee breaks, evening event at the Zoo with dinner,
+                            drinks, and ice cream until late, and Guerilla Evening event. Hotel accommodation is not included.
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-10 col-md-offset-1 fade-up">
+                        <p>
+                            <a href="https://tobiaspsp.wufoo.eu/forms/pwqxyjc1nqtvp0">Formular in deutsch</a>
+                        </p>
+                    </div>
+                    <div class="col-md-10 col-md-offset-1 fade-up">
+                        <div class="panel panel-default box-shadow--3dp">
+                            <div class="panel-body">
+                                <div id="wufoo-z1cygvfw1pmlcnc">
+                                    Fill out my
+                                    <a href="https://tobiaspsp.wufoo.eu/forms/z1cygvfw1pmlcnc">online form</a>.
+                                </div>
+                                <script type="text/javascript">
+                                    var z1cygvfw1pmlcnc;
+                                    (function (d, t) {
+                                        var s = d.createElement(t),
+                                            options = {
+                                                'userName': 'tobiaspsp',
+                                                'formHash': 'z1cygvfw1pmlcnc',
+                                                'autoResize': true,
+                                                'height': '1221',
+                                                'async': true,
+                                                'host': 'wufoo.eu',
+                                                'header': 'show',
+                                                'ssl': true
+                                            };
+                                        s.src = ('https:' == d.location.protocol ? 'https://' : 'http://') +
+                                            'www.wufoo.eu/scripts/embed/form.js';
+                                        s.onload = s.onreadystatechange = function () {
+                                            var rs = this.readyState;
+                                            if (rs)
+                                                if (rs != 'complete')
+                                                    if (rs != 'loaded') return;
+                                            try {
+                                                z1cygvfw1pmlcnc = new WufooForm();
+                                                z1cygvfw1pmlcnc.initialize(options);
+                                                z1cygvfw1pmlcnc.display();
+                                            } catch (e) {}
+                                        };
+                                        var scr = d.getElementsByTagName(t)[0],
+                                            par = scr.parentNode;
+                                        par.insertBefore(s, scr);
+                                    })(document, 'script');
+                                </script>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Agenda -->
+        <section id="agenda" class="white">
+            <div id="container">
+                <div class="gap"></div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="center gap fade-down section-heading">
+                            <h2 class="main-title">Agenda</h2>
+                            <hr>
+                        </div>
+                    </div>
+                </div>
+                <div class="gap"></div>
+                <div class="col-md-10 col-md-offset-1 fade-up">
+                    <!--<div class="table-responsive">-->
+
+                    <h4>Conference Day 1 April 17,2018</h4>
+
+                    <table class="table table-bordered table-hover table-condensed tablesaw" data-tablesaw-mode="swipe" data-tablesaw-minimap>
+                        <thead>
+                        <tr>
+                          <th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="persist">Time</th>
+                          <th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="1">Track 1</th>
+                          <th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="2">Track 2</th>
+                          <th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="3">Track 3</th>
+                        </tr>
+                      </thead>
+                      
+                        <tbody>
+                          <tr>
+                            <td>8:00 - 9:00</td>
+                            <td colspan="4" rowspan="1">Delegate Registration</td>
+                          </tr>
+                          <tr>
+                            <td>9:00 - 9:45</td>
+                            <td colspan="4" rowspan="1" data-toggle="tooltip" title="Conference Opening with a quick introduction and orientation">Opening Ceremony<br/><small>Tobias Weltner</small></td>
+                          </tr>
+                      <tr>
+                            <td>9:45 - 10:45</td>
+                            <td colspan="4" rowspan="1" style="background-color:rgba(0, 0, 128,0.3);" data-toggle="tooltip" title="This talk covers the transition from Windows PowerShell to Core PowerShell.  It reviews the forces and thinking behind this change and discusses what has gone well, what could have gone better, where we are and where things are going.">PowerShell 2018 - State of the Art (Keynote)<br><small>Jeffrey Snover</small></td>
+                          </tr>
+                          <tr>
+                            <td>10:45 - 11:00</td>
+                            <td colspan="4" rowspan="1" style="background-color:rgba(30, 100, 200,0.3);">Coffee Break<br>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>11:00 - 12:00</td>
+                            <td data-toggle="tooltip" title="Join us to learn how to managie your heterogeneous environments with PowerShell Core 6.0 and Win32-OpenSSH">Managing your heterogeneous environments with PowerShell Core 6.0 and Win32-OpenSSH<br/><small>Joey Aiello</small></td>
+                            <td data-toggle="tooltip" title="At PSConfEU17 we talked a bit about regex, and some of its common applications. This year, we&#39;ll crank it up to 11 and dive straight-first into some of the most bizarre functions .NET regex has to offer. These are the solutions you won&#39;t stumble upon in every other forum post, the outer edge cases!">RegEx ^3\.0$ - The Outer Edge<br/><small>Mathias Jessen</small></td>
+                            <td data-toggle="tooltip" title="Chat automation has been a persistent buzz in the industry: ChatOps is a term used to describe bringing development or operations work that is already happening in the background into a common chat room. It involves having everyone in the team in a single chat room, then bringing tools into the room so everyone can automate, collaborate and see how automation is used to solve problems. In doing so, you are unifying the communication about what work gets done and have a history of it happening.
+                      In this session we will go through setting up Chat automation using PowerShell, how to hit the ground running and what steps to take to convert your existing code base and make it work from Chat. From there on we will dive into how we can securely deploy, manage and administer this as a platform. Expect a session filled with demos and real-world insights of bringing this live in a production environment.">Using Chat Automation (ChatOps)<br/><small>Jaap Brasser</small></td>
+                          </tr>
+                          <tr>
+                            <td>12:00 - 13:00</td>
+                            <td colspan="4" rowspan="1">Lunch</td>
+                          </tr>
+                          <tr>
+                            <td>13:00 - 14:00</td>
+                            <td data-toggle="tooltip" title="In this session you will see how PowerShell fits into the era of containers - both for management purposes and for running inside containers. We will look at container orchestration as well as operations tasks - covering both Linux and Windows containers. Be prepared - there will be lots of demos!">Containers! Where is my PowerShell?<br/><small>Jan Egil Ring & Øyvind Kallstad</small></td>
+                            <td data-toggle="tooltip" title="Warum sollte ich aber auf Linux mit der PowerShell statt der bash arbeiten wollen? Dr. Holger Schwichtenberg zeigt die PowerShell Core in Action auf Linux, wei&#223;t aber auch darauf hin, welche Befehle aus der Windows PowerShell auf Linux noch fehlen.">PowerShell Core 6 auf Linux. Und was mach ich jetzt damit auf Linux?<br/><small>Dr. H. Schwichtenberg</small></td>
+                            <td data-toggle="tooltip" title="Ben presents first look at how DSC functionality has changed. Since the dust hasn&#39;t yet settled on this topic, expect a lot of cutting edge information that can&#39;t be summarized in this abstract yet.">The DSC Pull Server is dead, long live the DSC Pull Server<br/><small>Ben Gelens</small></td>
+                          </tr>
+                          <tr>
+                            <td>14:00 - 14:15</td>
+                            <td colspan="4" rowspan="1" style="background-color:rgba(30, 100, 200,0.3);">Coffee Break<br>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>14:15 - 15:15</td>
+                            <td data-toggle="tooltip" title="Julien &amp; David will show in this very technical but thrilling session commonly used attack techniques using PowerShell and possible countermeasures focusing on Win10 to provide very technical insights. Are you even aware of the defensive stack or have you just lost the race? It&#180;s time to figure out.">Red vs. Blue – Ready, Steady, Fight!<br/><small>Julien Reisdorffer, David das Neves</small></td>
+                            <td data-toggle="tooltip" title="A deep dive into the PowerShell type system. What it can and cannot do, how it works, a peek at how it is implemented and examples on how you can use it to adapt standard and third party types to your own situation and workflow.  ">The Extended Type System<br/><small>Staffan Gustafsson</small></td>
+                            <td data-toggle="tooltip" title="This is part 1 of a 2-part hot session focusing on two exciting topics:
+                      1) Exploring the type system using simple tools like powershell.exe and PSReadLine.
+                      2) Generating and emitting types at runtime using just powershell - no C# skills needed! 
+                      Attendees will be empowered by ETS and riches hiding right beneath their feet!
+                      If you liked what you have seen in this session, come to part 2 tomorrow to dig deeper!">How to become a PowerShell Type System Ninja! (Part 1)<br/><small>Mathias Jessen</small></td>
+                          </tr>
+                          <tr>
+                            <td>15:15 - 15:30</td>
+                            <td colspan="4" rowspan="1" style="background-color:rgba(30, 100, 200,0.3);">Coffee Break<br>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>15:30 - 16:30</td>
+                            <td data-toggle="tooltip" title="If you don&#39;t know JEA yet, this is your chance to catch up: What is JEA and how can it help you securing your infrastructure (+Tiering model)? How does it work? Which components are there and how to deploy? Use Cases on JEA Insecure configurations/exploiting risky JEA configuration">Securing your infrastructure with JEA<br/><small>Miriam Wiesner</small></td>
+                            <td data-toggle="tooltip" title="Why not view TFS and/or VSTS as part of your infrastructure, because the are...? Then, why no apply Infrastructure as Code to them? This is what my customer and I were thinking, and I&#39;ll show you just what we did and the obstacles we needed to overcome.">TFS and VSTS through Infrastructure as Code<br/><small>Jeff Wouters</small></td>
+                            <td data-toggle="tooltip" title="We love using Pester to validate our SQL Server estate but to enable this to be shared we needed to make our Pester tests easily configurable. Join MVPs Chrissy LeMaire and Rob Sewell as they show 
+                      the technical processes that we used to do this
+                      how we use AST in our unit tests to ensure that new tests follow our guidelines
+                      how you can use Power Bi to display your Pester Test Results">How we made Configurable Pester Tests for SQL Server<br/><small>Chrissy LeMaire, Rob Sewell</small></td>
+                          </tr>    <tr>
+                            <td>16:30 - 16:45</td>      
+                            <td colspan="4" rowspan="1" style="background-color:rgba(30, 100, 200,0.3);">Coffee Break<br>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>16:45 - 17:45</td>
+                            <td data-toggle="tooltip" title="Bloodhound is an Active Directory object relationship graphing tool used for situational awareness in offensive AD security testing. 
+                      Originally designed by red teamers for red teamers, it can also be very useful to blue teams and regular admins. 
+                      In this session we will introduce the tool itself and its basic concepts and functionalities. 
+                      I will then present a PowerShell module made to interact with the Bloodhound database via the REST API, allowing you to become a real Dog Whisperer, 
+                      and making it possible to connect other tools to bloodhound for further automation... This session is aimed at you even if you don&#39;t like dogs.">Invoke-CypherDog - Bloodhound Dog Whispering with PowerShell<br/><small>Walter Legowski</small></td>
+                            <td data-toggle="tooltip" title=".NET-Guru Dr. Holger Schwichtenberg erkl&#228;rt in diesem Vortrag einige Konzepte von .NET, die Ihnen helfen, noch deutlich mehr aus der PowerShell herauszuholen. Er zeigt dabei auch, wie man .NET-basierte Anwendungen fernsteuern kann.">Was ein PowerShell-Nutzer &#252;ber .NET wissen MUSS!<br/><small>Dr. H. Schwichtenberg</small></td>
+                            <td data-toggle="tooltip" title="Ever wanted to make manual checklists obsolete and auto-generated reports content rich? Demo heavy session about making easy validating your environment with OVF. Real life examples of maintenance burden solved. Testing AD, DHCP, S2D clusters for operational status or configuration drifts!">OVF - getting fun from boring tasks<br/><small>Mateusz Czerniawski</small></td>
+                          </tr>
+                          
+                          <tr>
+                            <td>17:45 - 18:15</td>      
+                            <td colspan="4" rowspan="1" style="background-color:rgba(30, 100, 200,0.3);">Introducing Workshops<br>
+                            </td>
+                          </tr>    <tr>
+                            <td>18:15 - 18:30</td>
+                            
+                            <td colspan="5" rowspan="1" style="background-color:rgba(0, 0, 128,0.3);">Walk to Zoo (Evening Event)</td>
+                          </tr>
+                          <tr>
+                            <td>18:30 - 01:00</td>
+                            <td colspan="5" rowspan="1">Evening Event at
+                      Yukon Bay/Zoo Hannover<br>
+                      Meeting Point: 18:30h Zoo Main Entrance. <span style="color: rgb(255, 102, 0);"><br>
+                      Bring your badge (required to enter Zoo)</span>!<br>
+                      Dinner and Drinks</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <br>
+                      <h4>Conference Day 2 April 18,2018</h4>
+                      <table class="table table-bordered table-hover table-condensed tablesaw" data-tablesaw-mode="swipe" data-tablesaw-minimap>
+                        <thead>
+                        <tr>
+                          <th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="persist">Time</th>
+                          <th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="1">Track 1</th>
+                          <th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="2">Track 2</th>
+                          <th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="3">Track 3</th>
+                        </tr>
+                      </thead>
+                      
+                        <tbody>
+                          <tr>
+                            <td>8:30 - 9:30</td>
+                            <td data-toggle="tooltip" title="An architecture overview of the PowerShell engine internals.">PowerShell Engine Internals <br/><small>Dongbo Wang</small></td>
+                            <td data-toggle="tooltip" title="Is Mr Typo your second name? Or perhaps you are surrounded by people that seem to mistype everything they can? If you want to fix either of these problems, join me for training session where we will learn how to author dynamic tab expansions in TabExpansionPlusPlus module for PowerShell 3 and above.">Saving Mr Typo: Authoring Tab Expansions with TabExpansionPlusPlus<br/><small>Bartosz Bielawski</small></td>
+                            <td data-toggle="tooltip" title="We all have been there, your script generates unexpected output. Join this session to find out which tools exist to debug your PowerShell scripts. As with all of the Case of the Unexplained sessions, this session is focused at how to come to a solution.">Case of the Unexplained - PowerShell Edition<br/><small>Dani&#235;l Both</small></td>
+                          </tr>
+                          <tr>
+                            <td>9:30 - 9:45</td>      
+                            <td colspan="4" rowspan="1" style="background-color:rgba(30, 100, 200,0.3);">Coffee Break<br>
+                            </td>
+                          </tr>    <tr>
+                            <td>9:45 - 10:45</td>
+                            <td data-toggle="tooltip" title="Join us to learn more about different Azure automation technologies and pick your winner.">Game of Automation Thrones<br/><small>Aleksandar Nikolic</small></td>
+                            <td data-toggle="tooltip" title="Join dbatools creator Chrissy LeMaire and architect Friedrich Weinmann for a view behind the technical scenes, to see how we help simplify development for our contributors and keep the project exciting for both beginners and pros.">Somewhat Advanced dbatools Development<br/><small>Chrissy LeMaire, Friedrich Weinmann</small></td>
+                            <td data-toggle="tooltip" title="2-part talk that covers two exciting topics:   1) Exploring the type system using simple tools like powershell.exe and PSReadLine 2) Generating and emitting types at runtime using just powershell - no C# skills needed!  Attendees will be empowered by ETS and riches hiding right beneath their feet!">How to become a PowerShell Type System Ninja! (Part 2<br/><small>Mathias Jessen</small></td>
+                          </tr>
+                              <tr>
+                            <td>10:45 - 11:00</td>
+                            <td colspan="4" rowspan="1" style="background-color:rgba(30, 100, 200,0.3);">Coffee Break<br>
+                            </td>
+                          </tr>
+                      
+                          <tr>
+                            <td>11:00 - 12:00</td>
+                            <td data-toggle="tooltip" title="By now you have heard of Just Enough Administration - but have you actually configured it yet? In this training session we will delve into creating JEA endpoints for various purposes - from typical Help Desk scenarios to DSC node self-registration!">Hands-on JEA<br/><small>Jan-Hendrik Peters, Raimund Andree</small></td>
+                            <td data-toggle="tooltip" title="Want to know how the Chef interacts with PowerShell and DSC on the Windows platform? We’re going to take a advanced level look at what you can do, tips and tricks to set you up for success and how using Chef’s open source toolset improves the testability, reliability and lowers implementation risk. &#160;">Desired State: A close look at the PowerShell and DSC integrations with Chef<br/><small>Stuart Preston</small></td>
+                            <td data-toggle="tooltip" title="You learned the syntax of Pester and now you wonder what is behind it? Or maybe, you prefer learning from the bottom up? In any case join me for this session and I will show you the basic building blocks of Pester,  the mechanisms used and how they are implemented.">Pester internals and concepts<br/><small>Jakub Jareš</small></td>
+                          </tr>
+                          <tr>
+                            <td>12:00 - 13:00</td>
+                            <td colspan="5" rowspan="1">Lunch &amp;
+                      Ask the Experts</td>
+                          </tr>
+                          
+                          <tr>
+                            <td>13:00 - 14:00</td>
+                            <td data-toggle="tooltip" title="Red Teams and nation state threat actors alike are using PowerShell obfuscation to evade detection. Come see how the author of Invoke-Obfuscation and one of the original PowerShell developers tackle detecting obfuscation with PowerShell&#39;s Abstract Syntax Tree and science in Revoke-Obfuscation.">Revoke-Obfuscation: PowerShell Obfuscation Detection (And Evasion) Using Science<br/><small>Daniel Bohannon </small></td>
+                            <td data-toggle="tooltip" title="This is fun! Doing self service for LEGO robots? What can be more existing and useful than that!">Automate everything: Bring self-service to LEGO robots<br/><small>Jakob Gottlieb Svendsen</small></td>
+                            <td data-toggle="tooltip" title="Realizing a completely automated infrastructure deployment pipeline can be much easier when built in a modular way. This session shows how to build one using what we know best -- PowerShell, DSC, and Pester.">Configurations, Personalities, and Stamps - Modular approach to realizing the deployment pipeline<br/><small>Ravikanth Chaganti</small></td>
+                          </tr>
+                              <tr>
+                            <td>14:00 - 14:15</td>
+                            <td colspan="4" rowspan="1" style="background-color:rgba(30, 100, 200,0.3);">Coffee Break<br>
+                            </td>
+                          </tr>
+                      
+                          <tr>
+                            <td>14:15 - 15:15</td>
+                            <td data-toggle="tooltip" title="DSC in Azure Automation: Run configuration and orchestration as a cloud service">DSC in Azure Automation: Run configuration and orchestration as a cloud service<br/><small>Michael Greene</small></td>
+                            <td data-toggle="tooltip" title="Want to extend PowerShell and the .NET Framework it rides on? This talk will show you how to interact with the Windows API in memory without the need to compile C# source code and contribute back to the community by documenting the API functions you use in your code.">PowerShell, Reflection, and the Windows API<br/><small>Jared Atkinson</small></td>
+                            <td data-toggle="tooltip" title="Still using manual checklists? Think it&#39;s time for some Operation Validation using Pester!">Infrastructure validation using Pester<br/><small>Irwin Strachan</small></td>
+                          </tr>
+                          <tr>
+                            <td>15:15 - 15:30</td>      
+                            <td colspan="4" rowspan="1" style="background-color:rgba(30, 100, 200,0.3);">Coffee Break<br>
+                            </td>
+                          </tr>    <tr>
+                            <td>15:30 - 16:30</td>
+                            <td data-toggle="tooltip" title="During the presentation, I would like to share my experiences with working on the modification of existing Windows PowerShell modules to work with PowerShell Core 6.x on all supported platforms (Windows, Linux, MacOS). I will present the main areas which need to be checked and/or adjusted.">Convert your Windows PowerShell module to be compatible with PowerShell Core 6.x<br/><small>Wojciech Sciesinski</small></td>
+                            <td data-toggle="tooltip" title="Every Yin has its Yang. Every Jedi has her Sith. Every bad practice can be balanced with an awesome trick. Join me to see the darkest places of PowerShell scripting universe so that you know what to avoid! Get to know tricks that will impress your peers and tips that will make your life easier!">PowerShell Yin-Yang: The Worst Practices and Tips &amp; Tricks<br/><small>Bartosz Bielawski</small></td>
+                            <td data-toggle="tooltip" title="How an average Ops can benefit from mysterious Release Pipiline. How GIT and a CI server allows to get greater confidence in your code? Use cases of AppVeyor and TeamCity in Objectivity Ecosystem for OS PPoSh modules and internal Ops Daily Blood.">Release Pipeline - the PPoSh Modules Story<br/><small>Mateusz Czerniawski</small></td>    
+                          </tr>
+                          <tr>
+                            <td>16:30 - 17:00</td>      
+                            <td colspan="4" rowspan="1" style="background-color:rgba(30, 100, 200,0.3);">Getting Ready for the Workshops<br>
+                            </td>
+                          <tr>
+                            <td>17:00 - 20:00</td>
+                            <td data-toggle="tooltip" title="Have you ever wanted to play with hacking tools, or wanted to know how attackers use PowerShell offensively? In this workshop I will introduce a number of offensive PowerShell toolsets, many of which I helped develop or co-author. 
+                      Intro and Setup
+                      Invoke-Mimikatz
+                      Defending against (Invoke-)Mimikatz
+                        -Sysmon events
+                        -PowerShell logging
+                        -Detecting Invoke-Mimikatz
+                      Alternate PowerShell Hosts
+                       -Searching for alternate PowerShell hosts
+                       -Abusing &quot;official&quot; alternate PowerShell hosts
+                       -Abusing alternate PowerShell hosts
+                      -PowerShell Injection
+                       -PowerShell without powershell.exe
+                        -UnmanagedPowerShell
+                       -Invoke-PSInject (what Empire is based on)
+                       -PowerShell in unmanaged code
+                       -Detecting PowerShell injection
+                        -WMI module load events
+                        -Sysmon events
+                        -PowerShell logging
+                        -Get-InjectedThread
+                       -Detecting &quot;PowerShell without powershell.exe&quot;
+                      -Wrapup">Workshop: The Power of the Dark Side: Offensive PowerShell Workshop<br/><small>Will Schroeder,Jared Atkinson</small></td>
+                            <td data-toggle="tooltip" title="Do you suffer from un(der)documented PowerShell code? Or, is it your hair that is constantly on fire, and you simply do not have the time to add proper documentation to your code? That’s common place, look around - yet it’s not very clever. PowerShell scripts become integral part of your business logic. Without documentation, you waste time for others to service your code, and may even violate legal requirements. As a professional PowerShell scripter, you want to make sure your code is accompanied by professional-looking and complete documentation. Just how do you approach this?
+                      Lean back, join this workshop, and become friends with PlatyPS! PlatyPS is the new tool used by both Microsoft and Community that help you to create professional documentation for your PowerShell projects in no time:
+                      • Just how do you (quickly) add good documentation to your existing code? PlatyPS is the answer: fast bootstrapping for existing projects!
+                      • How can documentation show both in the PowerShell help system, and can be published to websites? PlatyPS is the answer: compatible both with maml and markdown, documentation displays in PS help system and on websites
+                      • How do you maintain and update your documentation with new versions of your code, and new functions or new parameters introduced? PlatyPS is the answer: version control friendly documentation, support for updating existing help
+                      • Finally: how do you work as a team? PlatyPS is the answer: enable others to contribute to your documentation with ease.
+                      PlatyPS adds the professional touch to your PS projects, and is completely free. Join the list of these popular modules that already use platyPS: Azure-Powershell, Powershell-Docs, PSReadLine.
+                      In this workshop we will cover:
+                      • onboarding for an existing project (bring your own or use a sample one!)
+                      • standard workflow for platyPS: creating new help, updating help, creating maml from markdown.
+                      • hosting your markdown documentation.
+                      • best practices of markdown authoring.
+                      • Continuous Integration - never have out-of-date documentation again! 
+                      • How comment-based help benefits from platyPS.
+                      As a bonus we will talk about few advanced topics that haven’t been widely discussed before:
+                      • support for multiple versions in a single file.
+                      • localization story.
+                      Come and join the movement to modernize the powershell help!">Workshop: PlatyPS: From 0 to 1 and beyond<br/><small>Sergei Vorobev</small></td>
+                            <td data-toggle="tooltip" title="In this workshop, we&#39;ll work out how to successfully bring an existing infrastructure under code control, and the associated workflow required to make it reliable in a real-life scenario. 
+                       
+                      This is the perfect chance to hop on the train if you ever wondered what DSC is, how it can help you better manage infrastructure, and what a “Release Pipeline” is. The workshop provides much practical knowhow even for those who already work with DSC.
+                       
+                      We’ll first review the underpinning principles of managing infrastructure in a robust and trustworthy way. Then, step by step, we demonstrate how an existing infrastructure can be defined, put under DSC control, and changes deployed. We&#39;ll guide you through a quick setup of a representative lab of a legacy infrastructure with a domain and few services. We&#39;ll introduce our Continuous Integration (CI) tool, a VSTS instance, and create our build pipeline for PowerShell modules, introduce the concepts and replicate the learnings to other pipelines used in Infrastructure management. 
+                       
+                      We&#39;ll then start composing our DSC solution by composing Configurations and Resources into roles, to change our pets into cattle, adopting a flexible configuration data model defining the infrastructure similar to Puppet, Chef and Ansible.
+                      Attendees are free to follow along and deploy the solution in their own Azure Resource Group. By running the demo code they will experience first-hand how change is promoted throughout the staging rings, from Dev to Prod, and how the puzzle fits together. At the end of this workshop, you’ll have made friends with DSC and know how to tackle your own infrastructure.">Workshop: Bring Existing Infrastructure under Code Control<br/><small>Matthew Hitchcock, Gael Colas, Jan-Hendrik Peters, Raimund Andree</small></td>
+                          </tr>
+                        
+                        
+                        </tbody>
+                      </table>
+                      <br>
+                      <h4>Conference Day 3 April 19, 2018</h4>
+                      <table class="table table-bordered table-hover table-condensed tablesaw" data-tablesaw-mode="swipe" data-tablesaw-minimap>
+                        <thead>
+                        <tr>
+                          <th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="persist">Time</th>
+                          <th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="1">Track 1</th>
+                          <th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="2">Track 2</th>
+                          <th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="3">Track 3</th>
+                        </tr>
+                      </thead>
+                      
+                        <tbody>
+                          <tr>
+                            <td>8:30 - 9:30</td>
+                            <td data-toggle="tooltip" title="Does your organization have one or more Active Directory domain trusts? Can you guarantee that your trust “mesh” is configured correctly? This talk will explain domain trusts in depth and show how they can be easily audited from an defensive or offensive perspective with PowerShell/PowerView.">Auditing Domain Trust Relationships<br/><small>Will Schroeder</small></td>
+                            <td data-toggle="tooltip" title="For years admins have been performing repetitive tasks - even with the advent of PowerShell, they still repeat many tasks over and over.    This session helps SharePoint admins understand the &quot;Dev&quot; in DevOps &amp; understand the CD approach &amp; give them practical guidance they can implement immediately.">PowerShell for SharePoint Online - How DevOps is making SharePoint Admins feel loved again<br/><small>Rick Taylor</small></td>
+                            <td data-toggle="tooltip" title="Assumptions is the mother of all screw-ups. Making dependencies evident will keep your assumptions in check!">Dependencies, how to make them evident<br/><small>Irwin Strachan</small></td>
+                          </tr>
+                              <tr>
+                            <td>9:30 - 9:45</td>      
+                            <td colspan="4" rowspan="1" style="background-color:rgba(30, 100, 200,0.3);">Coffee Break<br>
+                            </td>
+                          </tr>    <tr>
+                            <td>9:45 - 10:45</td>
+                            <td data-toggle="tooltip" title="PowerShell Security is a very huge topic with many dependencies and technologies. Why not showing a -complete- Best Practice environment?  In this double-session we will set up with you -on-hands- a complete environment and go through all Security Best Practices!  Join us for a geat live-demo!">The PowerShell Security Best Practice Live Demo! (Part 1)<br/><small>David das Neves, Julien Reisdorffer, Raimund Andree, Miriam Wiesner</small></td>
+                            <td data-toggle="tooltip" title="An intro session to show how to deploy a PowerShell module with CD  In this fast paced demo heavy session we will  - Use Plaster  - Use GitHub  - Use Pester  - Use VSTS to Build, Test  &amp; Release   All using a module that uses the Microsoft Cognitive Services Faces API to analyse Beards!">Continuous Delivery for your Module to the PowerShell Gallery<br/><small>Rob Sewell</small></td>
+                            <td data-toggle="tooltip" title="Manage servers using configuration as code">Manage servers using configuration as code<br/><small>Michael Greene</small></td>
+                          </tr>
+                          <tr>
+                            <td>10:45 - 10:55</td>
+                            <td colspan="4" rowspan="1" style="background-color:rgba(30, 100, 200,0.3);">Coffee Break<br>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>10:50 - 11:45</td>
+                            <td data-toggle="tooltip" title="PowerShell Security is a very huge topic with many dependencies and technologies. Why not showing a -complete- Best Practice environment?  In this double-session we will set up with you -on-hands- a complete environment and go through all Security Best Practices!  Join us for a geat live-demo!">The PowerShell Security Best Practice Live Demo! (Part 2)<br/><small>David das Neves, Julien Reisdorffer, Raimund Andree, Miriam Wiesner</small></td>
+                            <td data-toggle="tooltip" title="In this session we will look at some key concepts around DevOps and tooling before diving into demos showing examples on what processes and tools can be used for automation. Azure Automation, Azure Logic Apps and Microsoft PowerApps is some of the technologies you will get to see in this session.">Be the automator - not the automated<br/><small>Jan Egil Ring</small></td>
+                            <td data-toggle="tooltip" title="Join us to learn how to make creation and management of Azure resources cool again. Enjoy the power of command-line directly in your browser!">PowerShell in Azure Cloud Shell<br/><small>Aleksandar Nikolic</small></td>
+                          </tr>
+                          <tr>
+                            <td>11:45 - 12:35</td>
+                            <td colspan="5" rowspan="1">Lunch &amp;
+                      Ask the Experts</td>
+                          </tr>
+                          <tr>
+                            <td>12:35 - 13:35</td>
+                            <td data-toggle="tooltip" title="Join us for a look at how PowerShell has evolved over time. We&#39;ll look at both the technical and environmental drivers behind many of the decisions that made PowerShell what it is today. This is part 1 of a two part presentation.">A Historical Architectural Tour of PowerShell (Part 1)<br/><small>Bruce Payette</small></td>
+                            <td data-toggle="tooltip" title="Working with PowerShell is often a joyous occasion, working with the latest and greatest technologies. Remoting from Linux to Windows and back again with the greatest ease, it is an interesting time to be involved with PowerShell.">Navigate around the edge with PowerShell<br/><small>Jaap Brasser</small></td>
+                            <td data-toggle="tooltip" title="Would you like to use DSC in your environment, or are you looking for a way to automate your DSC configurations? Join us in this session where we present a way to parameterize, test and automate your DSC configurations.">Automate automating your automation, DSC with class-defined metadata<br/><small>Dani&#235;l Both</small></td>    </tr>
+                      
+                      
+                          <tr>
+                            <td>13:35 - 13:45</td>
+                            <td colspan="4" rowspan="1" style="background-color:rgba(30, 100, 200,0.3);">Coffee Break<br>
+                            </td>
+                          </tr>
+                      
+                      
+                          <tr>
+                            <td>13:45 - 14:45</td>
+                            <td data-toggle="tooltip" title="Join us for a look at how PowerShell has evolved over time. We&#39;ll look at both the technical and environmental drivers behind many of the decisions that made PowerShell what it is today. This is part 2 of a two part presentation.">A Historical Architectural Tour of PowerShell (Part 2)<br/><small>Bruce Payette</small></td>
+                            <td data-toggle="tooltip" title="Formatting is what happens at the end of each pipeline, where objects are rendered into a text representation.
+                      This session will look at the formatting engine in PowerShell, it’s capabilities and it’s some of it’ weaknesses.
+                      We will dive into how to customize how objects from a module are formatted, including how to render a collection member.
+                      Lastly, a peek at a possible future of formatting, a new approach with better performance – PSMore.
+                      
+                      The session will be require a working knowledge of PowerShell, and will at occasions look at C# underpinnings.
+                      ">PowerShell Formatting<br/><small>Staffan Gustafsson</small></td>
+                            <td data-toggle="tooltip" title="DSC on it&#39;s own is a great platform but what is lacking is a nice of the shelf management solution and a bit of maturity. In this session I&#39;ll look at working with cm tooling like Chef and Puppet in combination with DSC to see where these CM tools enrich the DSC experience">DSC in Configuration Management tool world<br/><small>Ben Gelens</small></td>
+                          </tr>        
+                          <tr>
+                            <td>14:45 - 14:55</td>      
+                            <td colspan="4" rowspan="1" style="background-color:rgba(30, 100, 200,0.3);">Coffee Break<br>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>14:55 - 15:55</td>
+                            <td data-toggle="tooltip" title="Discuss the PowerShell Core 6.1 goals, road map, current progress, and demos of works-in-progress.  ">PowerShell Core 6.1 and beyond<br/><small>Steve Lee</small></td>
+                            <td data-toggle="tooltip" title="XML als Datenspeicher oder als einfache Datenbank in Form einer Textdatei wird h&#228;ufig in der PowerShell genutzt. In dieser Session kannst Du lernen, wie Du XML optimaler nutzen kannst.Bsp. &#252;ber XPATH nach Elementen oder nach XML Attributen suchen, Umgang mit Namensr&#228;umen usw.">Werde zum XML Ninja mit PowerShell<br/><small>Andreas Nick</small></td>
+                            <td data-toggle="tooltip" title="Asking for a specific data type as input can be very unintuitive and limiting for the user. Accepting anything and parsing in script however is hard to maintain. Enter Parameter Classes, introducing a flexible data adapter that can dynamically convert input as part of the parameter binding process.">Parameter Classes: Making parameter-binding user friendly<br/><small>Friedrich Weinmann</small></td>
+                          </tr>        
+                          <tr>
+                            <td>15:55 - 16:05</td>      
+                            <td colspan="4" rowspan="1" style="background-color:rgba(30, 100, 200,0.3);">Coffee Break<br>
+                            </td>
+                          </tr>    
+                          <tr>
+                            <td>16:05 - 17:05</td>
+                            <td data-toggle="tooltip" title="Attackers constantly update their tradecraft, forcing defenders to quickly build, tune, deploy &amp; maintain detections in never-ending sprints. Come see how applying DevOps practices &amp; frameworks like Pester, ScriptAnalyzer, &amp; custom fuzzers can drive robust methodology-based detection development.">DevSec Defense: How DevOps Practices Can Drive Detection Development For Defenders<br/><small>Daniel Bohannon</small></td>
+                            <td data-toggle="tooltip" title="A great and complete process of working with automation. Includes continous delivery for runbooks, import/Export of automation runbooks and resources such as credentials. and a great way to log all outputs and results from runbooks using OMS for up to 3 years present it using PowerBI.">Azure Automation in production, lessons learned in the field<br/><small>Jakob Gottlieb Svendsen</small></td>
+                            <td data-toggle="tooltip" title="You hear it every once in a while: Someone that&#39;s sick at home, undergoing a burnout. How do you avoid this yourself? Do you recognize the signs? What are the signs? Can you maintain a work-life balance? Is it the same for everyone? If not, what is it for you?
+                      In this lunch break session, Jeff Wouters covers some of these topics that affect all of us, one way or another.">Howto: Not get a burnout<br/><small>Jeff Wouters</small></td>
+                          </tr>           
+                              <tr>
+                            <td>17:05 - 17:15</td>
+                            <td colspan="4" rowspan="1" style="background-color:rgba(30, 100, 200,0.3);">Coffee Break<br>
+                            </td>
+                          </tr>
+                      
+                      
+                          <tr>
+                            <td>17:15 - 18:00</td>
+                            <td data-toggle="tooltip" title="Moving data in and out of databases and manipulating it on the fly is called ETL. The tools used in case of SQL Server are mostly based on Integration Services (SSIS). PowerShell could potentially be a big timesaver because a few lines of interpreted code might be a lot easier to write than desigining SSIS packages. But it probably wouldn&#39;t scale that well, the engine in SSIS that moves the data is quite powerfull and you could never achieve similar results in PowerShell. Or could you? Let&#39;s see if we can challenge the champion and have ourselves a little battle. Points can be earned for usability, but also raw speed!">ETL with PowerShell<br/><small>Andre Kamman</small></td>
+                            <td data-toggle="tooltip" title="Year after year, Microsoft strengthens it&#39;s effort to provide even more *niX style capabilites. In this co-hosted session Bartek Bielawski and Thorsten Butz will guide you through the continouing story of a unified DevOps world, from PS Core to LinuxKit. ">The X factor<br/><small>Bartosz Bielawski, Thorsten Butz</small></td>
+                            <td data-toggle="tooltip" title="For SharePoint, DSC is a sensitive topic.  Because it is idempotent, it may cause some headaches for SharePoint Admins.  REVERSE DSC, however, allows me to do a couple of things: make changes and have those changes reflected in the lower environments and update my documentation at the same time! ">Reverse DSC - Making SharePoint Admins feel loved again<br/><small>Rick Taylor</small></td>
+                          </tr>
+                          </tbody>
+                      </table>  
+                      <h4>Conference Day 4 April 20, 2018</h4>
+                      <table class="table table-bordered table-hover table-condensed tablesaw" data-tablesaw-mode="swipe" data-tablesaw-minimap>
+                        <thead>
+                        <tr>
+                          <th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="persist">Time</th>
+                          <th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="1">Track 1</th>
+                          <th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="2">Track 2</th>
+                          <th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="3">Track 3</th>
+                        </tr>
+                      </thead>
+                      
+                        <tbody>
+                          <tr>
+                            <td>8:30 - 9:30</td>
+                            <td data-toggle="tooltip" title="PowerShell providers have existed for a long time and the in-box Registry and WSMAN providers are classis examples of how the providers are used. However, creating custom providers is not an easy task as they are implemented only in C#. With the release of open source SHiPS module, it is now possible to implement PowerShell providers as class-based Script modules. In this session, we look at a few examples implemented using SHiPS and understand design and implementation best practices.">SHiPS: Walk-through a bare-metal system configuration<br/><small>Ravikanth Chaganti</small></td>
+                            <td data-toggle="tooltip" title="Mit Windows 10 1607 erfolgte die Integration von Microsoft Application Virtualization (App-V) in das Betriebssystem. Das ADK aus 1703 bringt nun den auf PowerShell basierenden App-V Autosequencer mit. Hier lernst Du wie das Modul funktioniert und wie Du diese Funktionen nutzen kannst.">Automatisierung der Erstellung von Softwarepaketen mit PowerShell<br/><small>Andreas Nick</small></td>
+                            <td data-toggle="tooltip" title="PowerShell Security is a very wide topic. Starting from Signing, Logging, Remoting, Priviliged Access Management moving on to enforced Constrained Language Mode, AMSI, JEA and much more. But where to start and where to end? We will discuss a simplified guideline what needs to be prioritized and how.">PowerShell Security - what to prioritize?<br/><small>David das Neves</small></td>
+                          </tr>
+                              <tr>
+                            <td>9:30 - 9:45</td>      
+                            <td colspan="4" rowspan="1" style="background-color:rgba(30, 100, 200,0.3);">Coffee Break<br>
+                            </td>
+                          </tr>    <tr>
+                            <td>9:45 - 10:45</td>
+                            <td data-toggle="tooltip" title="(Re)Building A PowerShell Module for Automated Empire Attacks  ">PowerShell Empire Strikes Back<br/><small>Walter Legowski</small></td>
+                            <td data-toggle="tooltip" title="Whatever Configuration Management solution you&#39;re going for: Chef, DSC, Puppet, etc Infrastructure as Code shares some challenges and best practices. In this session we&#39;ll introduce you to Test Kitchen, an open-source tool that can help with testing your automation, with Chef and DSC demos.">Test-Driven Infrastructure with Test Kitchen, Chef, and DSC<br/><small>Stuart Preston</small></td>
+                            <td data-toggle="tooltip" title="So you have heard about the big cloud, and want to test scenarios like desaster recovery, failover clusters and so on without touching a GUI? Look no further - we will delve into typical Azure-based Hybrid Cloud scenarios using PowerShell and AutomatedLab.">Hybrid Lab Automation<br/><small>Jan-Hendrik Peters, Raimund Andree</small></td>
+                          </tr>
+                          <tr>
+                            <td>10:45 - 10:55</td>
+                            <td colspan="4" rowspan="1" style="background-color:rgba(30, 100, 200,0.3);">Coffee Break<br>
+                            </td>
+                          </tr>
+                      
+                          <tr>
+                            <td>10:55 - 11:55</td>
+                            <td data-toggle="tooltip" title="In this session we will take a look at how we can call other languages from PowerShell, as well as how to run native commands from within you PowerShell scripts.">Using other languages from PowerShell<br/><small>&#216;yvind Kallstad</small></td>
+                            <td data-toggle="tooltip" title="Ansible is one of the most popular tools to manage hosts configuration. Usually is used to manage Linux-based nodes but can manage Windows-based machines too. In this case, all that is run on Windows is pure PowerShell code.Under presentation, I&#39;ll show you how you can write your own Ansible module.">Use your PowerShell skills to extend Ansible workflows - create your own Ansible module for Windows platform<br/><small>Wojciech Sciesinski</small></td>
+                            <td data-toggle="tooltip" title="Sure, there are powershell commands to create and control Azure functions, but what about writing the actual function in PowerShell? PowerShell is a first class language inside functions.  Let&#39;s dive into how this works and write some &quot;Serverless PoSh&quot;">Use PowerShell as your language of choice inside Azure Functions<br/><small>Andre Kamman</small></td>
+                          </tr>
+                          <tr>
+                            <td>11:55 - 12:45</td>
+                            <td colspan="5" rowspan="1">Lunch &amp;
+                      Ask the Experts</td>
+                          </tr>
+                          
+                          
+                          <tr>
+                            <td>12:45 - 13:45</td>
+                            <td data-toggle="tooltip" title="Ever used a module that just felt painful to use? Had to dig through heaps of documentations? Or more likely wished in vain those heaps existed at all? Drowned in a sea of blood (aka Wall of red, severe exceptionitis)? Don&#39;t panic! With this guide you will be able to avoid this in your own modules.">The hitchhiker&#39;s guide to user-friendly module design<br/><small>Friedrich Weinmann</small></td>
+                            <td data-toggle="tooltip" title="Everyone writes scripts in their own way. I&#39;ll show you (and share with you) the scripts and tools that I&#39;ve created to satisfy my OCD when it comes to delivering scripts to customers or reviewing those of others. Braces, brackets, indenting... and much more.">How to satisfy your OCD for and with PowerShell?<br/><small>Jeff Wouters</small></td>
+                            <td data-toggle="tooltip" title="Learn about the mistakes people make when writing tests and how to avoid them. I will show why you should name your tests correctly, remove conditions from them, why test your tests and much more.">Common mistakes in Pester tests<br/><small>Jakub Jareš</small></td>
+                          </tr>
+                              <tr>
+                            <td>13:45 - 14:00</td>
+                            <td colspan="4" rowspan="1" style="background-color:rgba(30, 100, 200,0.3);">Coffee Break<br>
+                            </td>
+                          </tr>
+                      
+                          <tr>
+                            <td>14:00 - 15:00</td>
+                            <td data-toggle="tooltip" title="Python is another great language and a tool for DevOps! Some problems cannot be solved with scripts alone and python has something to offer when PowerShell is not enough.">Python for PowerShellistas<br/><small>Sergei Vorobev</small></td>
+                            <td data-toggle="tooltip" title="Have you ever tried to read a file only for its content to look like a bunch of gobbledygook? In this workshop we will discuss data structures and some practical strategies for parsing them with PowerShell. By the end of this workshop, you will parse your first binary data structure!!">Working with Binary Data: Writing your own parser<br/><small>Jared Atkinson</small></td>
+                            <td data-toggle="tooltip" title="You will stumble upon numerous traps in terms of Authentication on (remote) devices in PowerShell: from &quot;double hop&quot; errors to session handling, from password management to certificate based logon: mind the gaps! ">A matter of trust: Authentication and authorization in the PowerShell<br/><small>Thorsten Butz</small></td>    
+                          </tr>
+                          <tr>
+                            <td>15:00 - 15:30</td>
+                            <td colspan="5" rowspan="1">Microsoft & Speakers Great Finale</td>
+                          </tr>  
+                        
+                        
+                        </tbody>
+                      </table>
+                    <!--</div>-->
+                </div>
+            </div>
+        </section>
+
+        <!-- Venue -->
+        <section id="venue" class="white">
+            <div class="container">
+                <div class="gap"></div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="center gap fade-down section-heading">
+                            <h2 class="main-title">Venue</h2>
+                            <hr>
+                            <p>The place to be!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="gap"></div>
+                <div class="col-md-10 col-md-offset-1 fade-up">
+                    <p>
+                        The conference takes place in the
+                        <a href="http://www.hcc.de/" target="_blank">Hannover Conference Centrum (HCC)</a>
+                        in Hannover, Germany.
+                    </p>
+                    <p>
+                        Please note that hotel cost and hotel reservations are not included or covered in any way in the conference fee. Any booking
+                        arrangement is between you and the hotel.
+                    </p>
+
+                    <div class="gap"></div>
+                    <div id="mapwrapper">
+                        <div id="map"></div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    </section>
+
+    <!-- Footer -->
+    <div id="footer-wrapper">
+        <section id="bottom" class="">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <p>
+                            The global PowerShell community arranges conferences in three parts of the world, so if you are unable to attend PowerShell
+                            Conference Europe perhaps you would like to consider these instead:
+                        </p>
+                        <ul>
+                            <li>
+                                <a href="http://powershell.asia/">PowerShell Conference Asia</a>
+                            </li>
+                            <li>
+                                <a href="https://powershell.org/summit/">PowerShell + DevOps Global Summit</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--/#bottom-->
+
+        <footer id="footer" class="">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6">
+                        &copy; 2017
+                        <a target="_blank" href="http://psconf.eu">psconf.eu</a>. All Rights Reserved.
+                    </div>
+                    <div class="col-sm-6">
+                        <ul class="pull-right">
+                            <li>
+                                <a id="gototop" class="gototop" href="#">
+                                    <i class="fa fa-chevron-up"></i>
+                                </a>
+                            </li>
+                            <!--#gototop-->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!--/#footer-->
+
+
+    </div>
+
+    <script src="js/plugins.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.prettyPhoto.js"></script>
+    <script src="js/tablesaw.jquery.js"></script>
+    <script src="js/tablesaw-init.js"></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCWDPCiH080dNCTYC-uprmLOn2mt2BMSUk&amp;sensor=true"></script>
+    <script src="js/init.js"></script>
+</body>
+
+</html>
